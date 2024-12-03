@@ -1,0 +1,98 @@
+.container {
+    width: 350px;
+    margin: 0 auto;
+    padding: 30px;
+    background: linear-gradient(135deg, hsla(333, 100%, 53%, 0.2) 1%, hsla(33, 94%, 57%, 0.2));
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .header {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+  }
+  
+  .upload-container {
+    margin-bottom: 20px;
+  }
+  
+  .file-upload {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .file-input {
+    padding: 8px;
+    border-radius: 1rem;
+    width: 80%;
+    border: solid 0.2rem rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .button-container {
+    margin-top: 30px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border-radius: 2rem;
+    cursor: pointer;
+    background: linear-gradient(135deg, hsla(333, 100%, 53%, 0.2) 1%, hsla(33, 94%, 57%, 0.2));
+    border: solid 0.2rem rgba(255, 255, 255, 0.5);
+    color: white;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .status {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .spinner {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .inner-circle {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+    border-color: rgba(255, 255, 255, 0.8) transparent transparent transparent;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
